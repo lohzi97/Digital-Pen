@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4d153bdc-ccf0-4a5a-be0d-b8626d7fa7aa}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="computeLength.py" />
+    <Compile Include="genBuffer.py" />
+    <Compile Include="genLineLoc.py" />
+    <Compile Include="genPaperScrn.py" />
+    <Compile Include="getCorners.py" />
+    <Compile Include="getMode.py" />
+    <Compile Include="getPaperCoor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inquiry.py" />
+    <Compile Include="LEDindicator.py" />
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="processCamFrame.py" />
+    <Compile Include="readMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="recordPenLoc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shutdown-BlinkingLED.py" />
+    <Compile Include="test_cv2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="processFrame\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
