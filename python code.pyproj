@@ -46,5 +46,10 @@
   <ItemGroup>
     <Folder Include="processFrame\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes for rclocal and bashrc.txt">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

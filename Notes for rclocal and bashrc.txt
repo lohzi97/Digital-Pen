@@ -1,0 +1,23 @@
+#======================================================
+# This file is a notes on how to setup .bashrc file 
+# and rc.local file. 
+# So that the the shutdown-BlinkingLED.py, getMode.py
+# and main.py can run automatically when RPi boot up.
+#======================================================
+
+# rc.local 
+# (limitation, can only do simple output process, 
+#  input such as readfile cannot be performed.)
+
+1. sudo nano /etc/rc.local
+2. add "/home/pi/shutdown-BlinkingLED.py" one line above 
+   "exit 0" 
+3. sudo chmod +x shutdown-BlinkingLED.py
+4. sudo reboot to test it out.
+
+# .bashrc
+
+1. sudo nano .bashrc
+2. add "Sudo python3 getMode.py & sudo python3 main.py && fg"
+   to the last line.
+3. close and open LXTerminal to test it out.
